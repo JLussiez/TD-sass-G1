@@ -20,4 +20,16 @@ footer {
   color: white;
 }
 
+button {
+  display: flex;
+  width: 126px;
+  height: 43px;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--light, #FFF);
+  background: var(--light, #FFF);
+}
+
 /*# sourceMappingURL=style.css.map */
