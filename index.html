@@ -9,12 +9,13 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
     <!-- Header -->
-    <div class="container-fluid">
+    <div class="gallery-container-fluid">
       <div>
-        <p class="container-fluid__gallery-title">Camp Life Gallery</p>
+        <p class="gallery-container-fluid__gallery-title">Camp Life Gallery</p>
       </div>
       <div class="row">
         <div class="col-3 mt-3">
@@ -60,6 +61,60 @@
           <img src="assets/img/gallery/image-12.png" alt="" />
         </div>
       </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" id="carousel-inner">
+        <div class="carousel-item active" id="carousel-item">
+          <p>Test1</p>
+        </div>
+        <div class="carousel-item" id="carousel-item">
+          <p>Test2</p>
+        </div>
+        <div class="carousel-item" id="carousel-item">
+          <p>Test3</p>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </body>
 </html>

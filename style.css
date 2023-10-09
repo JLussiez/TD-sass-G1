@@ -1,13 +1,19 @@
 @import "node_modules/bootstrap/dist/css/bootstrap.css";
-.container-fluid {
-  background-color: black;
+.gallery-container-fluid {
+  background-color: lightblue;
+  padding-bottom: 10%;
 }
-.container-fluid__gallery-title {
+.gallery-container-fluid__gallery-title {
   color: white;
   text-align: center;
   font-size: 50px;
   padding-bottom: 5%;
   padding-top: 5%;
+}
+
+#carousel-inner__carousel-item p {
+  font-size: 50px;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
