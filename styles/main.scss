@@ -1,0 +1,13 @@
+@import "node_modules/bootstrap/dist/css/bootstrap.css";
+
+.container-fluid{
+    background-color: black;
+
+    &__gallery-title{
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+}
