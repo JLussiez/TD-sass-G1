@@ -1,7 +1,20 @@
 
 
 
-
+body{
+    background: var(--primary, #0B181E);
+    color: white;
+    text-align: center;
+    display: flex;
+    height: 939px;
+    width: 1217px;
+    padding: 50px 76px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+    flex-shrink: 0;
+}
 
 
 .icon-facebook {
@@ -16,9 +29,3 @@
     background-image: url('./styles/assets/img/instagram.png');
 }
 
-
-footer{
-    background-color: black;
-    text-align: center;
-    color: white;
-}
