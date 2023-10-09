@@ -39,9 +39,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  display: flex;
+  justify-content: center;
 
   &__button {
     background-color: rgb(249, 184, 96);
     border: 0;
   }
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
 }
