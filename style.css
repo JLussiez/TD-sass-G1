@@ -1,4 +1,4 @@
-body {
+.container-form {
   background: var(--primary, #0B181E);
   color: white;
   text-align: center;
