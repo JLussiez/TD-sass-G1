@@ -1,7 +1,6 @@
 @import "node_modules/bootstrap/dist/css/bootstrap.css";
 .gallery-container-fluid {
-  background-color: lightblue;
-  padding-bottom: 10%;
+  background-color: black;
 }
 .gallery-container-fluid__gallery-title {
   color: white;
@@ -11,9 +10,23 @@
   padding-top: 5%;
 }
 
-#carousel-inner__carousel-item p {
-  font-size: 50px;
-  color: red;
+.carousel-inner {
+  background-color: rgb(11, 24, 30);
+}
+
+.carousel-item {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.carousel-item__image {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.carousel-item__h1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
