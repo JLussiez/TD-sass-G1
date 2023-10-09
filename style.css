@@ -1,3 +1,17 @@
+.icon-facebook {
+  background-image: url("C:UserstommeOneDrive\bureau\aMIENS TOM B2 2023 2024Projet CSS Av Groupe Julien Thomas MoiTD-sass-G1\assetsimg\facebook.png");
+}
 
+.icon-youtube {
+  background-image: url("./TD-sass-G1/assets/img/youtube.png");
+}
+
+.icon-instagram {
+  background-image: url("chemin/vers/votre/fichier/instagram.png");
+}
+
+footer {
+  background-color: aqua;
+}
 
 /*# sourceMappingURL=style.css.map */
