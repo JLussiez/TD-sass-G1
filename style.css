@@ -29,4 +29,16 @@
   padding-bottom: 5%;
 }
 
+.leaves {
+  background-image: url(../assets/img/leaves.png);
+  padding-bottom: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.leaves__button {
+  background-color: rgb(249, 184, 96);
+  border: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
