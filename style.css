@@ -2,27 +2,13 @@
   background: var(--primary, #0B181E);
   color: white;
   text-align: center;
-  display: flex;
-  height: 939px;
-  width: 1217px;
-  padding: 50px 76px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 62px;
-  flex-shrink: 0;
+  font-family: Raleway;
 }
 
-.icon-facebook {
-  background-image: url("./assets/img/facebook.png");
-}
-
-.icon-youtube {
-  background-image: url("./assets/img/youtube.png");
-}
-
-.icon-instagram {
-  background-image: url("./styles/assets/img/instagram.png");
+footer {
+  background: var(--primary, #0B181E);
+  text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
