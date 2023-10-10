@@ -8,200 +8,6 @@
   box-sizing: border-box;
 }
 
-.gallery-container-fluid {
-  background-color: black;
-  padding-left: 2%;
-
-  &__gallery-title {
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 5%;
-    padding-top: 5%;
-  }
-}
-
-.carousel-inner {
-  background-color: rgb(11, 24, 30);
-}
-
-.carousel-item {
-  color: white;
-  font-size: 15px;
-  text-align: center;
-  padding-bottom: 5%;
-
-  &__image {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
-  &__h1 {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-}
-
-.leaves {
-  background-image: url(../assets/img/leaves.png);
-  padding-bottom: 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-
-  &__button {
-    background-color: rgb(249, 184, 96);
-    border: 0;
-    height: 33px;
-    width: 113px;
-  }
-
-  &__border {
-    padding-top: 8%;
-  }
-
-  &__text {
-    font-size: 50px;
-  }
-}
-
-.row {
-  --bs-gutter-x: 0rem !important;
-}
-
-.container-form {
-  // background: var(--primary, #0b181e);
-  background-color: #0b181e;
-  color: white;
-  font-family: Raleway;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  gap: 62px;
-  flex-shrink: 0;
-}
-
-.form-control {
-  background-color: #0b181e;
-  border: 2px solid;
-  border-color: white;
-  opacity: 75%;
-  width: 900px;
-  height: 50px;
-  color: white;
-}
-
-.form-textarea {
-  background-color: #0b181e;
-  border: 1px solid;
-  border-color: white;
-  opacity: 75%;
-  width: 900px;
-  height: 50px;
-  color: white;
-}
-
-.container-form__form-control::placeholder {
-  color: white;
-}
-.container-form__form-textarea::placeholder {
-  color: white;
-}
-
-.footer-class {
-  // background: var(--primary, #0b181e);
-  background-color: black;
-  color: white;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.col-1 {
-  background-color: black;
-}
-
-.footer-logo {
-  padding-bottom: 5%;
-  padding-top: 5%;
-}
-
-.contact {
-  height: 100vh;
-  width: 80vw;
-  background-color: #0b181e;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
-}
-
-.form_head_text {
-  background-color: #0b181e;
-  width: 50%;
-  height: 25vh;
-}
-
-.contact_text_contact {
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  font-size: 40px;
-  margin-bottom: 0;
-}
-
-.contact_text_phone {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  margin-top: 34px;
-  margin-bottom: 34px;
-}
-
-.contact_text_adress {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-
-.form {
-  width: 50vw;
-  margin-top: 62px;
-  background-color: #0b181e;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.input_out {
-  background-color: #0b181e;
-  margin: 0;
-  padding: 0;
-}
-
-.form-control {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  background-color: #0b181e;
-  border-radius: 0%;
-  border-color: white;
-  color: white;
-  padding: 1.5rem;
-}
-
-.form-control::placeholder {
-  color: white;
-}
-
-.submit__form {
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  border-radius: 0%;
-  margin-top: 1.25rem;
-  padding: 0.75rem;
-  width: 10vw;
-}
-
-.form-button {
-  padding-top: 5ù;
-}
-
 .navbar {
   background-color: map-get($map: $colors, $key: "primary");
   height: 7em;
@@ -245,10 +51,6 @@
   border-radius: 0;
   border-color: map-get($map: $colors, $key: "accent");
   background-color: map-get($map: $colors, $key: "accent");
-}
-
-.row {
-  --bs-gutter-x: 0;
 }
 
 .about-section {
@@ -316,4 +118,201 @@
   border-radius: 0;
   border-color: map-get($map: $colors, $key: "accent");
   background-color: map-get($map: $colors, $key: "dark");
+}
+
+.gallery-container-fluid {
+  background-color: map-get($map: $colors, $key: "dark");
+  padding-left: 2%;
+
+  &__gallery-title {
+    color: map-get($map: $colors, $key: "light");
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    @include m.setfontfamilyplayfairdisplay("PlayFairRegular");
+  }
+}
+
+.carousel-inner {
+  background-color: map-get($map: $colors, $key: "primary");
+}
+
+.carousel-item {
+  color: map-get($map: $colors, $key: "light");
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 5%;
+  @include m.setfontfamilyplayfairdisplay("PlayFairRegular");
+
+  &__image {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  &__h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+.leaves {
+  background-image: url(../assets/img/leaves.png);
+  padding-bottom: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: map-get($map: $colors, $key: "light");
+
+  &__button {
+    background-color: map-get($map: $colors, $key: "accent");
+    border: 0;
+    height: 33px;
+    width: 113px;
+  }
+
+  &__border {
+    padding-top: 8%;
+  }
+
+  &__text {
+    font-size: 50px;
+    @include m.setfontfamilyplayfairdisplay("PlayFairRegular");
+  }
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+.container-form {
+  background-color: map-get($map: $colors, $key: "primary");
+  color: map-get($map: $colors, $key: "light");
+  font-family: Raleway;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 62px;
+  flex-shrink: 0;
+}
+
+.form-controler {
+  background-color: map-get($map: $colors, $key: "primary");
+  border: 2px solid;
+  border-color: map-get($map: $colors, $key: "light");
+  opacity: 75%;
+  width: 900px;
+  height: 50px;
+  color: map-get($map: $colors, $key: "light");
+}
+
+.form-textarea {
+  background-color: map-get($map: $colors, $key: "primary");
+  border: 1px solid;
+  border-color: map-get($map: $colors, $key: "light");
+  opacity: 75%;
+  width: 900px;
+  height: 50px;
+  color: map-get($map: $colors, $key: "light");
+}
+
+.container-form__form-control::placeholder {
+  color: map-get($map: $colors, $key: "light");
+}
+.container-form__form-textarea::placeholder {
+  color: map-get($map: $colors, $key: "light");
+}
+
+.footer-class {
+  // background: var(--primary, #0b181e);
+  background-color: map-get($map: $colors, $key: "dark");
+  color: map-get($map: $colors, $key: "light");
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.col-1 {
+  background-color: map-get($map: $colors, $key: "dark");
+}
+
+.footer-logo {
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.contact {
+  height: 100vh;
+  width: 80vw;
+  background-color: map-get($map: $colors, $key: "primary");
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.form_head_text {
+  @include m.setfontfamilyplayfairdisplay("PlayFairRegular");
+  background-color: map-get($map: $colors, $key: "primary");
+  width: 50%;
+  height: 25vh;
+}
+
+.contact_text_contact {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.contact_text_phone {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+.contact_text_adress {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form {
+  width: 50vw;
+  margin-top: 62px;
+  background-color: map-get($map: $colors, $key: "primary");
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input_out {
+  background-color: map-get($map: $colors, $key: "primary");
+  margin: 0;
+  padding: 0;
+}
+
+.form-control {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: map-get($map: $colors, $key: "primary");
+  border-radius: 0%;
+  border-color: map-get($map: $colors, $key: "light");
+  color: map-get($map: $colors, $key: "light");
+  padding: 1.5rem;
+}
+
+.form-control::placeholder {
+  color: map-get($map: $colors, $key: "light");
+}
+
+.form-button {
+  padding-top: 5%;
+}
+
+.submit-form {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 0%;
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+  width: 10vw;
 }
