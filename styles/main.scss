@@ -35,16 +35,26 @@
 
 .leaves {
   background-image: url(../assets/img/leaves.png);
-  padding-bottom: 20%;
+  padding-bottom: 30%;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  display: flex;
-  justify-content: center;
 
   &__button {
     background-color: rgb(249, 184, 96);
     border: 0;
+    height: 33px;
+    width: 113px;
+  }
+
+  &__border {
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+  }
+
+  &__text {
+    font-size: 50px;
   }
 }
 
