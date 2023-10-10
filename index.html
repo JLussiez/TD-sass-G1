@@ -1,15 +1,119 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/camp.png" alt="" width="60" height="60" class="d-inline-block align-center">
+          <span class="ml-2 title-brand">cooking' Camp</span>
+        </a>
+        <!-- Menu déroulant non fonctionnel x) (bootstrap mdr) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-flex-end" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Infos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dates</a>
+            </li>
+          </ul>
+
+          <div class="navbar__menu__networks">
+            <img src="./assets/img/facebook.png" alt="facebook">
+            <img src="./assets/img/instagram.png" alt="instagram">
+            <img src="./assets/img/youtube.png" alt="youtube">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Presentation  -->
+  <section class="container-fluid bg-img">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="line-height">
+        <h1 class="display-3">Culinary Sleepaway
+Camp for Grown-Ups!</h1>
+        <h2 class="lead">Summer 2035 | Lassen State Park</h2>
+        <button class="btn custom-btn-1" type="button">Sign Me Up</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- History of cooking -->
+  <section class="about-section">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- about section left -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="about-section__left text-center flex-column">
+            <h2 class="about-section__left__title">History of Cooking Camp</h2>
+            <p class="paragraph">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
+              “Edit Text” or double
+              click me to add your own content and make changes to the font. I’m a great place for you to tell a story
+              and
+              let your users know a little more about you.</p>
+            <button class="btn custom-btn-2" type="button">Sign Me Up</button>
+          </div>
+        </div>
+        <!-- about section right -->
+        <div class="col-md-6">
+          <img class="img-fluid" src="./assets/img/right-image.png" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="activities">
+    <!-- activities title-->
+    <div class="activities__title text-center">
+      <h2 class="activities__title__h2">What to Expect</h2>
+      <p class="activities__title__p">I'm title. Click here to add your own text and edit me.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-3 col-6 text-center">
+        <img src="/assets/img/tasse-de-cafe.png" alt="">
+        <p class="activities__subtitle">cooking classes</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <img src="/assets/img/botte-de-neige.png" alt="">
+        <p class="activities__subtitle">Hiking</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <img src="/assets/img/tente-de-camping.png" alt="">
+        <p class="activities__subtitle">Lodging</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <img src="/assets/img/feu-de-camps.png" alt="">
+        <p class="activities__subtitle">Campfires</p>
+      </div>
+      <div class="d-flex justify-content-center btn-container">
+        <button class="btn custom-btn-3" type="button">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+
 </html>
-
-

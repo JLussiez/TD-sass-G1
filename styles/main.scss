@@ -1,0 +1,124 @@
+@use './utils/variables' as *;
+@use './utils/mixin' as m;
+@use './base/typography.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: map-get($map: $colors, $key: 'primary');
+    height: 7em;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.title-brand {
+    color: map-get($map: $colors, $key: 'light');
+    @include m.setfontfamilyplayfairdisplay('PlayFairRegular');
+}
+
+.nav-link {
+    color: map-get($map: $colors, $key: 'light');
+}
+
+.bg-img {
+    background-image: url('/assets/img/hero-wrapper.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.display-3 {
+    color: map-get($map: $colors, $key: 'light');
+    @include m.setfontfamilyplayfairdisplay('PlayFairRegular');
+    line-height: 1.5em;
+    white-space: pre-wrap;
+}
+
+.lead {
+    color: map-get($map: $colors, $key: 'light');
+    line-height: 3em;
+}
+
+.custom-btn-1 {
+    color: map-get($map: $colors, $key: 'dark');
+    border-radius: 0;
+    border-color: map-get($map: $colors, $key: 'accent');
+    background-color: map-get($map: $colors, $key: 'accent');
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.about-section {
+    background-color: map-get($map: $colors, $key: 'primary');
+
+    &__left {
+        &__title {
+            @include m.setfontfamilyplayfairdisplay('PlayFairBold');
+            font-size: 2.5em;
+            color: map-get($map: $colors, $key: 'light');
+        }
+    }
+}
+
+
+.paragraph {
+    @include m.setfontfamilyraleway('RalewayRegular');
+    color: map-get($map: $colors, $key: 'light');
+    margin-top: 2em;
+    width: 70vh;
+}
+
+.custom-btn-2 {
+    color: map-get($map: $colors, $key: 'accent');
+    border-radius: 0;
+    border-color: map-get($map: $colors, $key: 'accent');
+    background-color: map-get($map: $colors, $key: 'primary');
+}
+
+.container-fluid {
+    --bs-gutter-x: 0;
+}
+
+.activities {
+    background-image: url('/assets/img/mountains.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        @include m.setfontfamilyplayfairdisplay('PlayFairDisplaySemiBold');
+        color: map-get($map: $colors, $key: 'light');
+        padding-top: 5em;
+
+        &__h2 {
+            font-size: 3em;
+        }
+    }
+
+    &__subtitle {
+        @include m.setfontfamilyplayfairdisplay('PlayFairDisplaySemiBold');
+        color: map-get($map: $colors, $key: 'light');
+        margin-top: 2em;
+        font-size: 1.2em;
+    }
+}
+
+.btn-container {
+    margin-top: 6em;
+}
+
+.custom-btn-3 {
+    color: map-get($map: $colors, $key: 'accent');
+    border-radius: 0;
+    border-color: map-get($map: $colors, $key: 'accent');
+    background-color: map-get($map: $colors, $key: 'dark');
+}

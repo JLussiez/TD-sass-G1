@@ -1,0 +1,25 @@
+$colors: (
+    'primary': #0B181E,
+    'accent': #F9B860,
+    'light': #ffffff,
+    'dark': #000000,
+
+);
+
+$polices-pfd: (
+    font-face: (
+        family: 'PlayFairDisplay',
+        font-files: ('.../assets/fonts/PlayFairDisplay'),
+        format : ('opentype')
+    )
+        
+);
+
+$polices-raleway: (
+    font-face: (
+        family: 'Raleway',
+        font-files: ('.../assets/fonts/Raleway'),
+        format : ('opentype')
+    )
+        
+)
