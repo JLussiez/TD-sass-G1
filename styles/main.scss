@@ -61,20 +61,19 @@
     background-color: map-get($map: $colors, $key: 'primary');
 
     &__left {
+        width: 70vh;
         &__title {
             @include m.setfontfamilyplayfairdisplay('PlayFairBold');
             font-size: 2.5em;
             color: map-get($map: $colors, $key: 'light');
         }
+
+        &__paragraph {
+            @include m.setfontfamilyraleway('RalewayRegular');
+            color: map-get($map: $colors, $key: 'light');
+            margin-top: 2em;
+        }
     }
-}
-
-
-.paragraph {
-    @include m.setfontfamilyraleway('RalewayRegular');
-    color: map-get($map: $colors, $key: 'light');
-    margin-top: 2em;
-    width: 70vh;
 }
 
 .custom-btn-2 {
@@ -113,7 +112,9 @@
 }
 
 .btn-container {
-    margin-top: 6em;
+    margin-top: 4em;
+    margin-bottom: auto;
+    width: 100%;
 }
 
 .custom-btn-3 {

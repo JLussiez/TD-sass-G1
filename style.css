@@ -88,17 +88,18 @@
 .about-section {
   background-color: #0B181E;
 }
+.about-section__left {
+  width: 70vh;
+}
 .about-section__left__title {
   font-family: PlayFairBold;
   font-size: 2.5em;
   color: #ffffff;
 }
-
-.paragraph {
+.about-section__left__paragraph {
   font-family: RalewayRegular;
   color: #ffffff;
   margin-top: 2em;
-  width: 70vh;
 }
 
 .custom-btn-2 {
@@ -134,7 +135,9 @@
 }
 
 .btn-container {
-  margin-top: 6em;
+  margin-top: 4em;
+  margin-bottom: auto;
+  width: 100%;
 }
 
 .custom-btn-3 {
