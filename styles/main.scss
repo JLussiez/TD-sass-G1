@@ -34,7 +34,7 @@
 
 .leaves {
   background-image: url(../assets/img/leaves.png);
-  padding-bottom: 30%;
+  padding-bottom: 20%;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -47,8 +47,6 @@
   }
 
   &__border {
-    display: flex;
-    justify-content: center;
     padding-top: 8%;
   }
 
@@ -59,4 +57,75 @@
 
 .row {
   --bs-gutter-x: 0rem !important;
+}
+
+.container-form {
+  // background: var(--primary, #0b181e);
+  background-color: #0b181e;
+  color: white;
+  font-family: Raleway;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 62px;
+  flex-shrink: 0;
+}
+
+.form-control {
+  background-color: #0b181e;
+  border: 2px solid;
+  border-color: white;
+  opacity: 75%;
+  width: 900px;
+  height: 50px;
+  color: white;
+}
+
+.form-textarea {
+  background-color: #0b181e;
+  border: 1px solid;
+  border-color: white;
+  opacity: 75%;
+  width: 900px;
+  height: 50px;
+  color: white;
+}
+
+.container-form__form-control::placeholder {
+  color: white;
+}
+.container-form__form-textarea::placeholder {
+  color: white;
+}
+
+.footer-class {
+  // background: var(--primary, #0b181e);
+  background-color: black;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.btn-submit {
+  width: 126px;
+  height: 43px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  gap: 16px;
+  // border: 1px solid var(--light, #fff);
+  // background: var(--light, #fff);
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.col-1 {
+  background-color: black;
+}
+
+.footer-logo {
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.form-inputs {
+  width: 900px;
 }
