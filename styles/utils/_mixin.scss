@@ -1,0 +1,8 @@
+@mixin setfontfamilyplayfairdisplay($string){
+    font-family: #{$string};
+}
+
+@mixin setfontfamilyraleway($string){
+    font-family: #{$string};
+}
+
