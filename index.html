@@ -4,12 +4,331 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./assets/js/script.js"></script>
   </head>
+
+  <header>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/camp.png" alt="" width="60" height="60" class="d-inline-block align-center">
+          <span class="ml-2 title-brand">cooking' Camp</span>
+        </a>
+        <!-- Menu déroulant non fonctionnel x) (bootstrap mdr) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-flex-end" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Infos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dates</a>
+            </li>
+          </ul>
+
+          <div class="navbar__menu__networks">
+            <img src="./assets/img/facebook.png" alt="facebook">
+            <img src="./assets/img/instagram.png" alt="instagram">
+            <img src="./assets/img/youtube.png" alt="youtube">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Presentation  -->
+  <section class="container-fluid bg-img">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="line-height">
+        <h1 class="display-3">Culinary Sleepaway</h1>
+        <h1 class="display-3">Camp for Grown-Ups!</h1>
+        <h2 class="lead">Summer 2035 | Lassen State Park</h2>
+        <button class="btn custom-btn-1" type="button">Sign Me Up</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- History of cooking -->
+  <section class="about-section">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- about section left -->
+        <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+          <div class="about-section__left text-center flex-column">
+            <h2 class="about-section__left__title">History of Cooking Camp</h2>
+            <p class="about-section__left__paragraph">I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click
+              “Edit Text” or double
+              click me to add your own content and make changes to the font. I’m a great place for you to tell a story
+              and
+              let your users know a little more about you.</p>
+            <button class="btn custom-btn-2" type="button">Sign Me Up</button>
+          </div>
+        </div>
+        <!-- about section right -->
+        <div class="col-md-6 col-12">
+          <img class="img-fluid" src="./assets/img/right-image.png" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="activities">
+    <!-- activities title-->
+    <div class="activities__title text-center">
+      <h2 class="activities__title__h2">What to Expect</h2>
+      <p class="activities__title__p">I'm title. Click here to add your own text and edit me.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-3 col-6 text-center">
+        <img class="img-fluid" src="/assets/img/tasse-de-cafe.png" alt="">
+        <p class="activities__subtitle">cooking classes</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <img class="img-fluid" src="/assets/img/botte-de-neige.png" alt="">
+        <p class="activities__subtitle">Hiking</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <img class="img-fluid" src="/assets/img/tente-de-camping.png" alt="">
+        <p class="activities__subtitle">Lodging</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <img class="img-fluid" src="/assets/img/feu-de-camps.png" alt="">
+        <p class="activities__subtitle">Campfires</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center btn-container">
+      <button class="btn custom-btn-3" type="button">Learn More</button>
+    </div>
+  </section>
   <body>
     <!-- Header -->
-    
+    <div class="gallery-container-fluid">
+      <div>
+        <p class="gallery-container-fluid__gallery-title">Camp Life Gallery</p>
+      </div>
+      <div class="row">
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-1.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-2.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-3.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-4.png" alt="" width="90%" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-5.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-6.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-7.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-8.png" alt="" width="90%" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-9.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-10.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-11.png" alt="" width="90%" />
+        </div>
+        <div class="col-3 mt-3">
+          <img src="assets/img/gallery/image-12.png" alt="" width="90%" />
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/img/Clip path group.png"
+            class="carousel-item__image"
+          />
+          <p>
+            I'm a testimonial. Click to edit me and add text that says something
+            nice about you and your services. Let your customers review you and
+            tell their friends how great you are.
+          </p>
+          <h1 class="carousel-item__h1">Jenny Phung</h1>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/Clip path group.png"
+            class="carousel-item__image"
+          />
+          <p>
+            I'm a testimonial. Click to edit me and add text that says something
+            nice about you and your services. Let your customers review you and
+            tell their friends how great you are.
+          </p>
+          <h1 class="carousel-item__h1">Jenny Phung</h1>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/Clip path group.png"
+            class="carousel-item__image"
+          />
+          <p>
+            I'm a testimonial. Click to edit me and add text that says something
+            nice about you and your services. Let your customers review you and
+            tell their friends how great you are.
+          </p>
+          <h1 class="carousel-item__h1">Jenny Phung</h1>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="leaves">
+      <div class="leaves__border justify-content-center text-center">
+        <p class="leaves__text">Ready for camp ?</p>
+      </div>
+      <div class="leaves__border justify-content-center text-center">
+        <button class="leaves__button" type="submit">Sign Me Up</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <section
+          class="container-form d-flex flex-column justify-content-center align-items-center text-center"
+        >
+          <h2>Contact</h2>
+          <p>Questions? Call us at 123-456-7890 or leave us a message:</p>
+          <p>500 Terry Francine Street San Francisco, CA 94158</p>
+          <div class="row form">
+            <div class="input_out">
+              <label for="exampleInputName" class="form-label"></label>
+              <input
+                type="text"
+                class="form-controler"
+                id="exampleInputName"
+                placeholder="Name"
+              />
+            </div>
+            <div class="input_out">
+              <label for="exampleFormControlInput1" class="form-label"></label>
+              <input
+                type="email"
+                class="form-controler"
+                id="exampleFormControlInput1"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input_out">
+              <label for="exampleInputSubject" class="form-label"></label>
+              <input
+                type="text"
+                class="form-controler"
+                id="exampleInputSubject"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="input_out">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea
+                class="form-controler"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Type your message here"
+              ></textarea>
+            </div>
+            <div class="form-button d-flex justify-content-end">
+              <input class="btn bg-white text-black submit-form" type="submit" value="Submit" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-class">
+      <div class="container">
+          <div class="footer-logo d-flex justify-content-center">
+            <img src="./assets/img/facebook.png" title="Facebook" />
+            <img src="./assets/img/youtube.png" title="Youtube" />
+            <img src="./assets/img/instagram.png" title="Instagram" />
+          </div>
+          <div class="footer-text d-flex justify-content-center">
+            <p>© 2035 Cookin’ Camp.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+</body>
 
-
+</html>
